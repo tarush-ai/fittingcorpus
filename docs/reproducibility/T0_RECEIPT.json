@@ -1,0 +1,96 @@
+{
+ "what": "every T0 module run in a temporary copy; each output's payload compared with the stored file",
+ "written_by": "tools/t0_receipt.py",
+ "utc": "2026-11-14T22:57:19+00:00",
+ "commit": "4819b06487b7",
+ "working_tree_dirty": false,
+ "run_all_exit_status": 0,
+ "run_all_summary": [
+  "\u2550\u2550 T0 result \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+  "   \u2713 15 passed",
+  "   every T0 module reproduced."
+ ],
+ "n_modules": 15,
+ "n_outputs": 15,
+ "n_payload_identical": 14,
+ "outputs": [
+  {
+   "module": "ctrlbf1_control_backfill",
+   "output": "results/ctrlbf1_control_backfill.json",
+   "identical": true
+  },
+  {
+   "module": "cv8_c6_prefix_corpus",
+   "output": "results/cv8_c6_prefix_corpus_control.json",
+   "identical": true
+  },
+  {
+   "module": "dn1_design_nulls",
+   "output": "results/dn1_design_nulls.json",
+   "identical": true
+  },
+  {
+   "module": "e33b_tstats",
+   "output": "results/e33b_tstats_410m.json",
+   "identical": true
+  },
+  {
+   "module": "e48c_exposure_read",
+   "output": "results/e48c_exposure_vs_read.json",
+   "identical": true
+  },
+  {
+   "module": "e51_interaction",
+   "output": "results/e51_interaction_variance.json",
+   "identical": true
+  },
+  {
+   "module": "e54_aggregation",
+   "output": "results/e54_aggregation_audit_rstrip_v2.json",
+   "identical": true
+  },
+  {
+   "module": "e55_matrix",
+   "output": "results/e55_matrix_robustness_rstrip.json",
+   "identical": true
+  },
+  {
+   "module": "e57_variance_ci",
+   "output": "results/e57_grid_variance_ci_rstrip.json",
+   "identical": true
+  },
+  {
+   "module": "e61_adjudicate",
+   "output": "results/e61_randomized_null_410m.json",
+   "identical": true
+  },
+  {
+   "module": "paper_clustered_t",
+   "output": "results/paper_clustered_derangement_t.json",
+   "identical": true
+  },
+  {
+   "module": "r10_t59_readout",
+   "output": "results/r10_t59_readout_reconciliation.json",
+   "identical": true
+  },
+  {
+   "module": "r5_corpus_axis",
+   "output": "results/r5_corpus_axis_uncertainty_rstrip.json",
+   "identical": true
+  },
+  {
+   "module": "r8_flatness",
+   "output": "results/r8_ladder_flatness.json",
+   "identical": false,
+   "fields_that_differ": [
+    ".prereg_sha256"
+   ]
+  },
+  {
+   "module": "r9_calibrated_min",
+   "output": "results/r9_permutation_calibrated_min.json",
+   "identical": true
+  }
+ ]
+}

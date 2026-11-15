@@ -1,0 +1,243 @@
+{
+ "experiment": "E33 \u2014 the missing J=I arm on the E28 read ladder",
+ "prereg": "PLAN.tex section 6 (E33), fixed before this ran; quoted in this file's docstring",
+ "status": "PRE-REGISTERED",
+ "model": "EleutherAI/pythia-410m-deduped",
+ "band": [
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20
+ ],
+ "device": "cpu",
+ "n_items": 541,
+ "admitted_sets": [
+  "multihop",
+  "multilingual",
+  "order-ops",
+  "poetry",
+  "typo"
+ ],
+ "excluded_sets": {
+  "association": "floored \u2014 196/205 ladder cells exactly zero (E28 crit 3)"
+ },
+ "reference_lens": "e28_Github_410m_n400_s0.pt",
+ "derangement": "random",
+ "derangement_seed": 0,
+ "derangement_layer_map": {
+  "9": 17,
+  "10": 9,
+  "11": 14,
+  "12": 18,
+  "13": 16,
+  "14": 13,
+  "15": 11,
+  "16": 19,
+  "17": 12,
+  "18": 10,
+  "19": 20,
+  "20": 15
+ },
+ "supersedes": "results/e33_logit_baseline_410m.json \u2014 v1, whose CONTROL DID NOT FIRE (4/6) because it used a cyclic shift by one layer. The decision rule is unchanged; only the mis-specified control was fixed. v1 is retained.",
+ "by_transport": {
+  "logit_I": {
+   "multihop": {
+    "min": 0.1137309271310057,
+    "best1L": 0.09847434024725642,
+    "mean": 0.03536754460739238,
+    "persist": 0.02219140077275889
+   },
+   "multilingual": {
+    "min": 0.1120377103132861,
+    "best1L": 0.09100797799016748,
+    "mean": 0.0289460961108229,
+    "persist": 0.018129078671336174
+   },
+   "order-ops": {
+    "min": 0.18961038972650254,
+    "best1L": 0.17272727404321944,
+    "mean": 0.04588744629706655,
+    "persist": 0.01558441509093557
+   },
+   "poetry": {
+    "min": 0.018950437461691245,
+    "best1L": 0.007288629987410137,
+    "mean": 0.0027939746089811835,
+    "persist": 0.001457725917654378
+   },
+   "typo": {
+    "min": 0.1651785708963871,
+    "best1L": 0.09821428598037787,
+    "mean": 0.049479167509291856,
+    "persist": 0.035714286512562206
+   },
+   "association": {
+    "min": 0.006211180106869766,
+    "best1L": 0.004658385179936886,
+    "mean": 0.0009057970850595406,
+    "persist": 0.0
+   }
+  },
+  "jlens_P": {
+   "multihop": {
+    "min": 0.06241331435739994,
+    "best1L": 0.056865464097687175,
+    "mean": 0.013985205716120877,
+    "persist": 0.0
+   },
+   "multilingual": {
+    "min": 0.10986221821180411,
+    "best1L": 0.07650471345654555,
+    "mean": 0.03136330623445766,
+    "persist": 0.02284263925892966
+   },
+   "order-ops": {
+    "min": 0.07922077950622354,
+    "best1L": 0.07922077950622354,
+    "mean": 0.02153679635375738,
+    "persist": 0.009090908936091832
+   },
+   "poetry": {
+    "min": 0.017492711410990784,
+    "best1L": 0.011661807341235024,
+    "mean": 0.004616132139095238,
+    "persist": 0.004373177752963134
+   },
+   "typo": {
+    "min": 0.25744047335215975,
+    "best1L": 0.16071428411773273,
+    "mean": 0.09250991977751255,
+    "persist": 0.07440476239259754
+   },
+   "association": {
+    "min": 0.003105590119957924,
+    "best1L": 0.001552795059978962,
+    "mean": 0.0002587991766631603,
+    "persist": 0.0
+   }
+  },
+  "jshuf": {
+   "multihop": {
+    "min": 0.06934812824640955,
+    "best1L": 0.06241331409130778,
+    "mean": 0.009593157663143106,
+    "persist": 0.002773925129856382
+   },
+   "multilingual": {
+    "min": 0.09427121175186974,
+    "best1L": 0.051486585555332046,
+    "mean": 0.021573603685413088,
+    "persist": 0.013415518482880933
+   },
+   "order-ops": {
+    "min": 0.11038960849067994,
+    "best1L": 0.10649350618145295,
+    "mean": 0.023917748958670666,
+    "persist": 0.007792207811559949
+   },
+   "poetry": {
+    "min": 0.024781341132308756,
+    "best1L": 0.010204081423580647,
+    "mean": 0.0031584061549178193,
+    "persist": 0.001457725917654378
+   },
+   "typo": {
+    "min": 0.2544642873108387,
+    "best1L": 0.169642853683659,
+    "mean": 0.06708829370992524,
+    "persist": 0.04464285834027188
+   },
+   "association": {
+    "min": 0.012422360080693449,
+    "best1L": 0.004658385179936886,
+    "mean": 0.0012939958833158016,
+    "persist": 0.0
+   }
+  },
+  "rand_matched": {
+   "multihop": {
+    "min": 0.0152565882142101,
+    "best1L": 0.009708737688405173,
+    "mean": 0.0012713823733585222,
+    "persist": 0.0
+   },
+   "multilingual": {
+    "min": 0.03226976056716272,
+    "best1L": 0.012327773629554681,
+    "mean": 0.003021513145150883,
+    "persist": 0.0
+   },
+   "order-ops": {
+    "min": 0.031168831246239797,
+    "best1L": 0.02337662343467985,
+    "mean": 0.0025974025816789697,
+    "persist": 0.0
+   },
+   "poetry": {
+    "min": 0.011661807873419352,
+    "best1L": 0.004373177752963134,
+    "mean": 0.0009718173116977726,
+    "persist": 0.0
+   },
+   "typo": {
+    "min": 0.02976190485060215,
+    "best1L": 0.011904762259551458,
+    "mean": 0.002728174623501088,
+    "persist": 0.0
+   },
+   "association": {
+    "min": 0.031055900268256664,
+    "best1L": 0.009316769960735525,
+    "mean": 0.0025879917333700825,
+    "persist": 0.0
+   }
+  }
+ },
+ "persist_admitted_mean": {
+  "logit_I": 0.018615381393049444,
+  "jlens_P": 0.022142297668116432,
+  "jshuf": 0.014016447136444704,
+  "rand_matched": 0.0
+ },
+ "e28_asymptotes": {
+  "Github": {
+   "mean": 0.028084053793529264,
+   "seed_sd": 0.0003725015802729375
+  },
+  "Wikipedia_en": {
+   "mean": 0.03860496947484109,
+   "seed_sd": 0.000497512452938681
+  },
+  "StackExchange": {
+   "mean": 0.0456756031007639,
+   "seed_sd": 0.0002979844946588909
+  },
+  "Pile-CC": {
+   "mean": 0.04571574828415005,
+   "seed_sd": 0.0001835424093483373
+  },
+  "USPTO_Backgrounds": {
+   "mean": 0.049735264846729854,
+   "seed_sd": 0.0005027384624140496
+  }
+ },
+ "corpora_above_logit": [
+  "Github",
+  "Wikipedia_en",
+  "StackExchange",
+  "Pile-CC",
+  "USPTO_Backgrounds"
+ ],
+ "corpora_at_or_below_logit": [],
+ "control_C_jp_beats_jshuf_n_sets": 4,
+ "control_C_fires": false,
+ "VERDICT": "I BELOW ALL FIVE \u2014 the fitted operator helps at 410M regardless of corpus; the corpus floor is a floor on a real advantage"
+}

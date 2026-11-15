@@ -1,0 +1,51 @@
+{
+ "e59_read_dose": {
+  "stored_sha": "06272f749e1fbef830d20559f98bc7324532e244c2865db061d750f1bc296517",
+  "predicted_sha": "7c1c6b762d47c819b5439a843284a7c79a55f5fcb1a0701cc50338479bd979c3",
+  "fields": [
+   "prereg"
+  ],
+  "numeric": [],
+  "script_diff": "4 changed lines, 0 NOT a prereg path"
+ },
+ "e65_ckpt_geometry": {
+  "stored_sha": "cea1549bbfefad0baac73eadb286493b5effb57c93bef7d3eb4e13bd1cc4ae0a",
+  "predicted_sha": "bbe32c177ad9c0f80d66730260342bf64530277082594abfe433d15d19577877",
+  "fields": [
+   "prereg"
+  ],
+  "numeric": [],
+  "script_diff": "4 changed lines, 0 NOT a prereg path"
+ },
+ "e48_crossover": {
+  "stored_sha": "364c5f3be616f008353e09695c09e1bfeebe9dc1b2e9b347ac0904ff480e1609",
+  "predicted_sha": "e479cd0c039e83849725aa19cdb40072dff06c7f03e50a3e16cf455c2d77db75",
+  "fields": [
+   "prereg"
+  ],
+  "numeric": [],
+  "script_diff": "4 changed lines, 0 NOT a prereg path"
+ },
+ "e52_factorial": {
+  "stored_sha": "44d43319a7ec0b6145430f38f235084f3274d342f3be663fb3026f0bbb0cf670",
+  "predicted_sha": "56ec5e422daa5fab5c7421407719308d7374a1af9a7dcdedc4827bc831bfd150",
+  "fields": [
+   "prereg",
+   "prereg_files[0].path",
+   "prereg_files[1].path",
+   "prereg_files[2].path"
+  ],
+  "numeric": [],
+  "script_diff": "12 changed lines, 0 NOT a prereg path"
+ },
+ "e36_qladder": {
+  "stored_sha": "2b970c1743f835d8ce5dffa6394e5c650e2ec6749c1d70d41a14c5b3bc3ed458",
+  "predicted_sha": "1318d73053a6a271698afa57e9711b4c730c3782ca1d2b39f52d439cf4e42d8d",
+  "fields": [
+   "prereg",
+   "prereg_r4b"
+  ],
+  "numeric": [],
+  "script_diff": "6 changed lines, 0 NOT a prereg path"
+ }
+}

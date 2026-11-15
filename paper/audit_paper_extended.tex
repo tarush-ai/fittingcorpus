@@ -1,0 +1,12 @@
+% audit_paper_extended.tex - the EXTENDED public version (project website, arXiv).
+%
+% It is the camera-ready source with one switch on. Everything shared lives in audit_paper_5pp.tex,
+% so the two versions cannot drift; this file only defines \EXTENDED and inputs it. With \EXTENDED:
+%   - the NeurIPS style runs in preprint mode, with a notice naming the workshop version;
+%   - the abstract carries a one-line note saying what this version adds;
+%   - Appendix E reports CV3 (E78), the pre-registered score-unit check. It ran before submission
+%     but its primary result was not in the submitted paper, and the workshop's camera-ready rules
+%     admit no new results, so the camera-ready (audit_paper_5pp.tex built alone) omits it.
+% Build both with:  cd paper && ./build_audit.sh
+\def\EXTENDED{1}
+\input{audit_paper_5pp}

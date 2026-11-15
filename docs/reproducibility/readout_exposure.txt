@@ -1,0 +1,711 @@
+READOUT EXPOSURE — 291 non-sidecar results files under results/
+
+  IMMUNE       53  ( 18.2%)
+  CLEAN        44  ( 15.1%)
+  RESCORED     22  (  7.6%)
+  EXPOSED     110  ( 37.8%)
+  INHERITED    24  (  8.2%)
+  UNKNOWN      38  ( 13.1%)
+
+  readout-safe (IMMUNE + CLEAN)        97  ( 33.3%)
+  needs re-scoring (EXPOSED + INHER)  134  ( 46.0%)
+
+--- IMMUNE ---
+  results/cv1_answer_competence.json
+      cv1_answer_competence.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/cv2_position_support.json
+      cv2_position_support.py: never calls load_eval; no readout over the battery
+  results/cv4_phase1_capability.json
+      cv4_phase1_capability.py: never calls load_eval; no readout over the battery
+  results/e35_containment.json
+      t35_containment.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/e35_containment_shard0.json
+      t35_containment.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/e35_containment_smoke.json
+      t35_containment.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/e35_smoke_box.json
+      t35_containment.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/e48_competence_gate_410m.json
+      t48_competence_gate.py: never calls load_eval; no readout over the battery
+  results/e64_instrument_cost.json
+      t64_instrument_cost.py: never calls load_eval; no readout over the battery
+  results/postreview_completion.json
+      postreview_completion.py: never calls load_eval; no readout over the battery
+  results/r8_ladder_flatness.json
+      r8_ladder_flatness.py: never calls load_eval; no readout over the battery
+  results/r9_permutation_calibrated_min.json
+      r9_permutation_calibrated_min.py: never calls load_eval; no readout over the battery
+  results/t0_smoke_160m.json
+      t0_smoke.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t0_smoke_1b.json
+      t0_smoke.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t0_smoke_410m.json
+      t0_smoke.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t0_smoke_70m.json
+      t0_smoke.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t10_target_layer_160m.json
+      t10_target_layer.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t10_target_layer_410m.json
+      t10_target_layer.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t10_target_layer_70m.json
+      t10_target_layer.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t11_fit_distribution_shortskip_70m.json
+      t11_fit_distribution.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t11_multihop_backfill_70m.json
+      t11_fit_distribution.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t11b_refit_feasibility.json
+      t11_fit_distribution.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t12_concept_hessian_410m.json
+      t12_concept_hessian.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t14_dispersion_ladder.json
+      t14_dispersion_ladder.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t14b_dispersion_scaling.json
+      t14_dispersion_ladder.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t16_robust_aggregation_1b.json
+      t16_robust_aggregation.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t16b_reads_mean_1b.json
+      t16_robust_aggregation.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t16b_reads_median_1b.json
+      t16_robust_aggregation.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t18_n_sweep_410m.json
+      t18_n_sweep.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t19_skipfirst_410m.json
+      t19_skipfirst_sweep.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t3_160m_db128.json
+      t3_read_audit.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t3_410m_FIXED.json
+      t3_read_audit.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t3_410m_n200.json
+      t3_read_audit.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t3_70m_db128.json
+      t3_read_audit.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t3_70m_n200.json
+      t3_read_audit.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t3_smoke_70m.json
+      t3_read_audit.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t4_160m_db128.json
+      t4_geometry.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t4_410m_db128.json
+      t4_geometry.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t4_70m_db128.json
+      t4_geometry.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t4_70m_n200.json
+      t4_geometry.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t4_smoke_70m.json
+      t4_geometry.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t5_write_410m.json
+      t5_write_battery.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t5a_capability_160m.json
+      t5_write_battery.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t5a_capability_160m_v2.json
+      t5_write_battery.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t5a_capability_1b.json
+      t5_write_battery.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t5a_capability_410m.json
+      t5_write_battery.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t5a_capability_410m_v2.json
+      t5_write_battery.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t5a_capability_70m.json
+      t5_write_battery.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t5a_capability_70m_v2.json
+      t5_write_battery.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t8_probe_swap_410m.json
+      t8_probe_swap.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t9_n_convergence_160m.json
+      t9_n_convergence.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t9_n_convergence_410m.json
+      t9_n_convergence.py: [producer inferred from path] never calls load_eval; no readout over the battery
+  results/t9_n_convergence_70m.json
+      t9_n_convergence.py: [producer inferred from path] never calls load_eval; no readout over the battery
+
+--- CLEAN ---
+  results/cv3_margins_410m.json
+      cv3_margins.py: loads the battery and applies .rstrip() to the prompt
+  results/cv5_metric_sensitivity_410m.json
+      cv5_metric_sensitivity.py: loads the battery and applies .rstrip() to the prompt
+  results/cv6/cv6_1.4b_n25.json
+      cv6_per_family_ladder.py: cache_activations() strips at `pr = pr.rstrip() if strip else pr`, and `strip` DEFAULTS TO TRUE. The False path is reachable only from --c0-reproduce-d3's negative control, which exists to prove control C0 can fail and is stored under `negative_control` in cv6_c0_scorer_equivalence.json, never in a graded arm.
+  results/cv6/cv6_2.8b_n25.json
+      cv6_per_family_ladder.py: cache_activations() strips at `pr = pr.rstrip() if strip else pr`, and `strip` DEFAULTS TO TRUE. The False path is reachable only from --c0-reproduce-d3's negative control, which exists to prove control C0 can fail and is stored under `negative_control` in cv6_c0_scorer_equivalence.json, never in a graded arm.
+  results/cv6/cv6_c0_scorer_equivalence.json
+      cv6_per_family_ladder.py: cache_activations() strips at `pr = pr.rstrip() if strip else pr`, and `strip` DEFAULTS TO TRUE. The False path is reachable only from --c0-reproduce-d3's negative control, which exists to prove control C0 can fail and is stored under `negative_control` in cv6_c0_scorer_equivalence.json, never in a graded arm.
+  results/cv6_per_family_ladder.json
+      cv6_per_family_ladder.py: cache_activations() strips at `pr = pr.rstrip() if strip else pr`, and `strip` DEFAULTS TO TRUE. The False path is reachable only from --c0-reproduce-d3's negative control, which exists to prove control C0 can fail and is stored under `negative_control` in cv6_c0_scorer_equivalence.json, never in a graded arm.
+  results/cv7/cv7_1b_n200.json
+      cv7_1b_rung.py: delegates the battery read to cv6_per_family_ladder.py, which cache_activations() strips at `pr = pr.rstrip() if strip else pr`, and `strip` DEFAULTS TO TRUE. The False path is reachable only from --c0-reproduce-d3's negative control, which exists to prove control C0 can fail and is stored under `negative_control` in cv6_c0_scorer_equivalence.json, never in a graded arm.
+  results/cv7_1b_rung.json
+      cv7_1b_rung.py: delegates the battery read to cv6_per_family_ladder.py, which cache_activations() strips at `pr = pr.rstrip() if strip else pr`, and `strip` DEFAULTS TO TRUE. The False path is reachable only from --c0-reproduce-d3's negative control, which exists to prove control C0 can fail and is stored under `negative_control` in cv6_c0_scorer_equivalence.json, never in a graded arm.
+  results/d3_corpus_by_family_410m.json
+      d3_corpus_by_family.py: loads the battery and applies .rstrip() to the prompt
+  results/e13_rank_target_layer.json
+      t13_bootstrap_controls.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/e48_crossover_410m_rstrip.json
+      t48_crossover.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=true
+  results/e60_fitter_determinism.json
+      t60_fitter_determinism.py: loads the battery and applies .rstrip() to the prompt
+  results/t13_transport_controls_160m.json
+      t13_bootstrap_controls.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t13_transport_controls_410m.json
+      t13_bootstrap_controls.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t13_transport_controls_70m.json
+      t13_bootstrap_controls.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t13b_bootstrap_controls_160m.json
+      t13_bootstrap_controls.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t13b_bootstrap_controls_410m.json
+      t13_bootstrap_controls.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t13b_bootstrap_controls_70m.json
+      t13_bootstrap_controls.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t15_shuffle_diagnostic_410m.json
+      t15_shuffle_diagnostic.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t15b_partition_aggregation_dependence.json
+      t15_shuffle_diagnostic.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t17_reaggregate_160m.json
+      t17_reaggregate.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t17_reaggregate_410m.json
+      t17_reaggregate.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t20_ablation_kl_160m.json
+      t20_ablation_kl.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t20_ablation_kl_410m.json
+      t20_ablation_kl.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t20_ablation_kl_70m.json
+      t20_ablation_kl.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t20_ablation_kl_70m_Pcode.json
+      t20_ablation_kl.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t20_ablation_kl_70m_Ppile.json
+      t20_ablation_kl.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t20_ablation_kl_70m_Pwikitext.json
+      t20_ablation_kl.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t22_bootstrap_ci_160m.json
+      t22_bootstrap_ci.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t22_bootstrap_ci_410m.json
+      t22_bootstrap_ci.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t22_bootstrap_ci_persist_160m.json
+      t22_bootstrap_ci.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t22_bootstrap_ci_persist_410m.json
+      t22_bootstrap_ci.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t23_pq_ladder_410m.json
+      t23_pq_ladder.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t23_pq_ladder_410m_LENGTHMATCHED.json
+      t23_pq_ladder.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t23_pq_ladder_70m.json
+      t23_pq_ladder.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t23_pq_ladder_70m_LENGTHMATCHED.json
+      t23_pq_ladder.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t23_pq_ladder_70m_wiki_pile.json
+      t23_pq_ladder.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t7_bootstrap_160m.json
+      t7_bootstrap_audit.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t7_bootstrap_410m.json
+      t7_bootstrap_audit.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t7_bootstrap_70m.json
+      t7_bootstrap_audit.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t7_lens_comparison_160m.json
+      t7_bootstrap_audit.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t7_lens_comparison_410m.json
+      t7_bootstrap_audit.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t7_lens_comparison_70m.json
+      t7_bootstrap_audit.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+  results/t7_smoke_410m.json
+      t7_bootstrap_audit.py: [producer inferred from path] loads the battery and applies .rstrip() to the prompt
+
+--- RESCORED ---
+  results/e33_logit_baseline_410m_v2.json
+      t33_logit_baseline.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+      RE-SCORED: logit constant re-derived under both conventions (review/reproducibility/scripts/logit_baseline.json)
+  results/e54_aggregation_audit.json
+      reads results/e33_logit_baseline_410m_v2.json, which is exposed
+      RE-SCORED: derangement control re-run under both readouts, 5 corpora x N in {200,400} x 5 draws (review/reproducibility/scripts/derange.py)
+  results/e54_aggregation_audit_rstrip.json
+      reads results/e33_logit_baseline_410m_v2.json, which is exposed
+      RE-SCORED: derangement control re-run under both readouts, 5 corpora x N in {200,400} x 5 draws (review/reproducibility/scripts/derange.py)
+  results/e54_aggregation_audit_rstrip_v2.json
+      reads results/e33_logit_baseline_410m_v2.json, which is exposed
+      RE-SCORED: derangement control re-run under both readouts, 5 corpora x N in {200,400} x 5 draws (review/reproducibility/scripts/derange.py)
+  results/ladder410/ladder_Github_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_Github_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_Github_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_Pile-CC_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_Pile-CC_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_Pile-CC_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_StackExchange_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_StackExchange_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_StackExchange_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_USPTO_Backgrounds_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_USPTO_Backgrounds_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_USPTO_Backgrounds_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_Wikipedia_en_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_Wikipedia_en_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410/ladder_Wikipedia_en_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/e51_interaction_cpu.json
+      reads results/ladder1b/tv_Github_s0.json, which is exposed
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/e53_ladder_summary_cpu.json
+      reads results/e54_aggregation_audit.json, which is exposed
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rescore/ladder_Github_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+
+--- EXPOSED ---
+  results/d1_min_union_diagnostic_410m.json
+      d1_min_union_diagnostic.py: loads the battery and does NOT strip the prompt
+  results/e31_local_bakeoff_410m.json
+      t31_local_bakeoff.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e33_logit_baseline_410m.json
+      t33_logit_baseline.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e34a_dact_vs_floor_410m.json
+      t34_dact_vs_floor.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e34b_jeval_dact_410m.json
+      t34_dact_vs_floor.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e36_qladder_410m.json
+      t36_qladder.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e36_qladder_410m_c1arm.json
+      t36_qladder.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e36_qladder_410m_rstrip.json
+      t36_qladder.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e37_rank_ablation_160m_wikitext.json
+      t37_rank_ablation.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e37_rank_ablation_410m.json
+      t37_rank_ablation.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e37_rank_ablation_410m_wikitext.json
+      t37_rank_ablation.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e37_rank_ablation_70m_wikitext.json
+      t37_rank_ablation.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e38_jgeometry.json
+      t38_jgeometry.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e44_dread_410m.json
+      t44_concept_energy.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_Github_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_Github_s1.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_Github_s2.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_Pile-CC_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_Pile-CC_s1.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_Pile-CC_s2.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_StackExchange_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_StackExchange_s1.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_StackExchange_s2.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_USPTO_Backgrounds_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_USPTO_Backgrounds_s1.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_USPTO_Backgrounds_s2.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_Wikipedia_en_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_Wikipedia_en_s1.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_INSTREAM_Wikipedia_en_s2.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_OOD_CommonPile_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_OOD_CommonPile_s1.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_OOD_CommonPile_s2.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_OOD_News_2024_dedup_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_OOD_News_2024_dedup_s1.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_OOD_News_2024_dedup_s2.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_OOD_News_2024_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_OOD_News_2024_s1.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_OOD_News_2024_s2.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_OOD_arXiv_2023_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_OOD_arXiv_2023_s1.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48/tv_OOD_arXiv_2023_s2.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e48_crossover_410m.json
+      t48_crossover.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=False
+  results/e52_factorial_410m.json
+      t52_factorial.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e52_factorial_410m_pooled.json
+      t52_factorial.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e52_factorial_410m_rerun.json
+      t52_factorial.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e52_factorial_410m_rstrip.json
+      t52_factorial.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e52_factorial_410m_rstrip_w1.json
+      t52_factorial.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e52_factorial_410m_rstrip_w2.json
+      t52_factorial.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e52_factorial_410m_rstrip_w8.json
+      t52_factorial.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e57_factorial_cells_410m.json
+      t52_factorial.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e57_factorial_cells_410m_pooled.json
+      t52_factorial.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e57_factorial_cells_410m_rstrip.json
+      t52_factorial.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/e58_algebra_audit.json
+      t58_algebra_audit.py: loads the battery and does NOT strip the prompt
+  results/e59_read_dose_410m.json
+      t59_read_dose.py: loads the battery and does NOT strip the prompt
+  results/e61/tv_rand_Github_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e61/tv_rand_Github_s1.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e61/tv_rand_Github_s2.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e61/tv_rand_Pile-CC_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e61/tv_rand_Pile-CC_s1.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e61/tv_rand_Pile-CC_s2.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e61/tv_rand_USPTO_Backgrounds_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e61/tv_rand_USPTO_Backgrounds_s1.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e61/tv_rand_USPTO_Backgrounds_s2.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e61/tv_real_USPTO_Backgrounds_s0.json
+      trainval.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/e65_ckpt_geometry_410m.json
+      t65_ckpt_geometry.py: loads the battery and does NOT strip the prompt
+  results/e65_ckpt_readout_1b.json
+      t65_ckpt_readout.py: loads the battery and does NOT strip the prompt
+  results/e65_ckpt_readout_410m.json
+      t65_ckpt_readout.py: loads the battery and does NOT strip the prompt
+  results/e65_ckpt_readout_410m_trainval.json
+      t65_ckpt_readout.py: loads the battery and does NOT strip the prompt
+  results/e66_fitter_equivalence_cuda.json
+      t66_fitter_equivalence_cuda.py: loads the battery and does NOT strip the prompt
+  results/edata1_item_count_reconciliation.json
+      d1_min_union_diagnostic.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/en1_operator_error_at_n200.json
+      d1_min_union_diagnostic.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/ladder1b/tv_Github_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_Github_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_Github_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_Pile-CC_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_Pile-CC_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_Pile-CC_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_StackExchange_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_StackExchange_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_StackExchange_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_USPTO_Backgrounds_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_USPTO_Backgrounds_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_USPTO_Backgrounds_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_Wikipedia_en_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_Wikipedia_en_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b/tv_Wikipedia_en_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_Github_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_Github_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_Github_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_Pile-CC_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_Pile-CC_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_Pile-CC_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_StackExchange_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_StackExchange_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_StackExchange_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_USPTO_Backgrounds_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_USPTO_Backgrounds_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_USPTO_Backgrounds_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_Wikipedia_en_s0.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_Wikipedia_en_s1.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/ladder1b_b613/tv_Wikipedia_en_s2.json
+      e28_ladder_410m.py: [producer inferred from path] strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/m1/m1_5shard.json
+      d1_min_union_diagnostic.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/m1/m1_partial.json
+      d1_min_union_diagnostic.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/r4_corrections.json
+      r4_recomputes.py: loads the battery and does NOT strip the prompt
+  results/r6_within_source_410m.json
+      r6_within_source.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/r6_within_source_410m_cpu.json
+      r6_within_source.py: strips only when --rstrip is passed; unstripped by default; this file records rstrip_arm=None
+  results/r7_matched_pools_410m.json
+      r7_matched_pools.py: loads the battery and does NOT strip the prompt
+  results/t21_conditioning_160m.json
+      t21_conditioning.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/t21_conditioning_410m.json
+      t21_conditioning.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+  results/t21_conditioning_70m.json
+      t21_conditioning.py: [producer inferred from path] loads the battery and does NOT strip the prompt
+
+--- INHERITED ---
+  results/d2_device_crossvalidation.json
+      reads results/e48_crossover_410m.json, which is exposed
+  results/e33b_tstats_410m.json
+      reads results/e33_logit_baseline_410m_v2.json, which is exposed
+  results/e48b_exposure_growth.json
+      reads results/m1/m1_5shard.json, which is exposed
+  results/e48c_exposure_vs_read.json
+      reads results/e48_crossover_410m.json, which is exposed
+  results/e51_interaction_variance.json
+      reads results/ladder410/ladder_Github_s0.json, which is exposed
+  results/e53_ladder_summary.json
+      reads results/e36_qladder_410m.json, which is exposed
+  results/e55_matrix_robustness.json
+      reads results/e52_factorial_410m.json, which is exposed
+  results/e55_matrix_robustness_rstrip.json
+      reads results/e52_factorial_410m_rstrip.json, which is exposed
+  results/e56_predictor_registry.json
+      reads results/e31_local_bakeoff_410m.json, which is exposed
+  results/e57_grid_variance_ci.json
+      reads results/e57_factorial_cells_410m.json, which is exposed
+  results/e57_grid_variance_ci_rstrip.json
+      reads results/e57_factorial_cells_410m_rstrip.json, which is exposed
+  results/e61_randomized_null_410m.json
+      reads results/e61/tv_rand_Github_s0.json, which is exposed
+  results/e62_band_adjudication.json
+      reads results/ladder1b_b613/tv_Github_s0.json, which is exposed
+  results/e62_interaction_b613.json
+      reads results/ladder410/ladder_Github_s0.json, which is exposed
+  results/paper_clustered_derangement_t.json
+      reads results/e54_aggregation_audit_rstrip_v2.json, which is exposed
+  results/r3_close_d2.json
+      reads results/ladder410/ladder_Github_s0.json, which is exposed
+  results/r4b_e36_flatness.json
+      reads results/e36_qladder_410m.json, which is exposed
+  results/r4c/e51_interaction_best1L.json
+      reads results/ladder410/ladder_Github_s0.json, which is exposed
+  results/r4c/e51_interaction_mean.json
+      reads results/ladder410/ladder_Github_s0.json, which is exposed
+  results/r4c/e51_interaction_min.json
+      reads results/ladder410/ladder_Github_s0.json, which is exposed
+  results/r4c/e51_interaction_persist.json
+      reads results/ladder410/ladder_Github_s0.json, which is exposed
+  results/r4e_control_power.json
+      reads results/e34a_dact_vs_floor_410m.json, which is exposed
+  results/r5_corpus_axis_uncertainty.json
+      reads results/e57_factorial_cells_410m.json, which is exposed
+  results/r5_corpus_axis_uncertainty_rstrip.json
+      reads results/e57_factorial_cells_410m_rstrip.json, which is exposed
+
+--- UNKNOWN ---
+  results/e45_disagreement_geometry.json
+      no provenance.script
+  results/e46_disagreement_ablation.json
+      no provenance.script
+  results/e47_ablation_pairs.json
+      no provenance.script
+  results/e49_derangement_stability.json
+      no provenance.script
+  results/e50_concept_energy.json
+      no provenance.script
+  results/fit_corpus_manifest_wikitext_n200.json
+      no provenance.script
+  results/ladder410_cpu/ladder_Github_s0.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_Github_s1.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_Github_s2.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_Pile-CC_s0.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_Pile-CC_s1.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_Pile-CC_s2.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_StackExchange_s0.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_StackExchange_s1.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_StackExchange_s2.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_USPTO_Backgrounds_s0.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_USPTO_Backgrounds_s1.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_USPTO_Backgrounds_s2.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_Wikipedia_en_s0.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_Wikipedia_en_s1.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu/ladder_Wikipedia_en_s2.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_Github_s0.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_Github_s1.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_Github_s2.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_Pile-CC_s0.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_Pile-CC_s1.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_Pile-CC_s2.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_StackExchange_s0.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_StackExchange_s1.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_StackExchange_s2.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_USPTO_Backgrounds_s0.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_USPTO_Backgrounds_s1.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_USPTO_Backgrounds_s2.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_Wikipedia_en_s0.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_Wikipedia_en_s1.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/ladder410_cpu_rstrip/ladder_Wikipedia_en_s2.json
+      no provenance.script
+      RE-SCORED: 15 (corpus, seed) cells re-scored under .rstrip() at read-rung Q0 (review/reproducibility/data/rstrip_rescore/rs_*.json)
+  results/r7_verified_snapshot/MANIFEST.json
+      no provenance.script
+  results/r8_c1_unstripped/ladder_Github_s0.json
+      no provenance.script
+
+==============================================================================
+THE VIEW THAT DECIDES THE PAPER — the results files original_paper.tex cites
+==============================================================================
+  EXPOSED    scale floor, W_U concept-row geometry
+             results/e38_jgeometry.json
+  CLEAN      160M interval, both aggregations
+             results/t22_bootstrap_ci_160m.json
+  CLEAN      160M interval, persist arm
+             results/t22_bootstrap_ci_persist_160m.json
+  EXPOSED    the 8x8 grid, margins, LOO, leave-two-out
+             results/e52_factorial_410m.json
+  RESCORED   aggregation audit, matrix_loo
+             results/e54_aggregation_audit.json
+  INHERITED  bootstrap intervals on the variance split
+             results/e57_grid_variance_ci.json
+  EXPOSED    per-draw cells behind E57
+             results/e57_factorial_cells_410m.json
+  INHERITED  independent 5x5 replication at N=400
+             results/e55_matrix_robustness.json
+  EXPOSED    read-dose sweep
+             results/e59_read_dose_410m.json
+  INHERITED  per-corpus asymptotes, flatness in N
+             results/e53_ladder_summary.json
+  INHERITED  20 failed predictors
+             results/e56_predictor_registry.json
+  EXPOSED    derangement, both aggregations
+             results/e48_crossover_410m.json
+  EXPOSED    min-union mechanism and band-width sweep
+             results/d1_min_union_diagnostic_410m.json
+  INHERITED  randomised-network null
+             results/e61_randomized_null_410m.json
+  INHERITED  containment index
+             results/e48c_exposure_vs_read.json
+  CLEAN      fitter and readout fidelity
+             results/e60_fitter_determinism.json
+  EXPOSED    context-pool disjointness
+             results/e58_algebra_audit.json
+
+  CLEAN        3 of 17
+  RESCORED     1 of 17
+  EXPOSED      7 of 17
+  INHERITED    6 of 17
+  FIELD-LEVEL EXCEPTIONS (the file is exposed; the cited fields are not):
+    results/e38_jgeometry.json
+      the file is EXPOSED (t38 loads the battery), but the fields the paper cites are E39/*/mean_cos_I and eff_rank_I, computed from W_U alone with no prompts. The scale-floor claim is IMMUNE at field level. E42's gap_by_corpus_410m is not.
+    results/e58_algebra_audit.json
+      the file is EXPOSED (t58 loads the battery for the concept-token overlap), but the claim the paper cites is context-pool disjointness, a corpus-vs-corpus computation with no readout. IMMUNE at field level.
+
+
+  paper-cited files that are readout-safe : 3 of 17
+  paper-cited files needing a re-score    : 13 of 17
+
+wrote docs/reproducibility/readout_exposure.json

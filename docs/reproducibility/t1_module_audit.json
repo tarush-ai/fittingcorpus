@@ -1,0 +1,477 @@
+[
+ {
+  "module": "cv5_sensitivity",
+  "script": "experiments/cv5_metric_sensitivity.py",
+  "args": [],
+  "outputs": [
+   "results/cv5_metric_sensitivity_410m.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, 1 .pt recorded",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "SAME_CODE",
+  "script_detail": "",
+  "pt_recorded": 1,
+  "pt_declared": 1,
+  "n_invocations": 1
+ },
+ {
+  "module": "cv2_position",
+  "script": "experiments/cv2_position_support.py",
+  "args": [],
+  "outputs": [
+   "results/cv2_position_support.json"
+  ],
+  "type": "TYPE_2_CORPUS",
+  "type_why": "tokenizer-only from_pretrained x1, no model forward, no operator",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "SAME_CODE",
+  "script_detail": "",
+  "pt_recorded": 0,
+  "pt_declared": 0,
+  "n_invocations": 1
+ },
+ {
+  "module": "e58_algebra",
+  "script": "experiments/t58_algebra_audit.py",
+  "args": [
+   "--device",
+   "cpu"
+  ],
+  "outputs": [
+   "results/e58_algebra_audit.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, 5 .pt recorded",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "SAME_CODE",
+  "script_detail": "",
+  "pt_recorded": 5,
+  "pt_declared": 5,
+  "n_invocations": 1
+ },
+ {
+  "module": "e59_read_dose",
+  "script": "experiments/t59_read_dose.py",
+  "args": [
+   "--device",
+   "cpu"
+  ],
+  "outputs": [
+   "results/e59_read_dose_410m.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, 21 .pt recorded",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "CODE_CHANGED",
+  "script_detail": "original at repro/scripts_at_run/808803674ad1__t59_read_dose.py",
+  "pt_recorded": 21,
+  "pt_declared": 6,
+  "n_invocations": 1
+ },
+ {
+  "module": "d1_union",
+  "script": "experiments/d1_min_union_diagnostic.py",
+  "args": [
+   "--corpora",
+   "USPTO_Backgrounds,Pile-CC,Github",
+   "--n-derangements",
+   "3"
+  ],
+  "outputs": [
+   "results/d1_min_union_diagnostic_410m.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, 3 .pt recorded",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "SAME_CODE",
+  "script_detail": "",
+  "pt_recorded": 3,
+  "pt_declared": 3,
+  "n_invocations": 1
+ },
+ {
+  "module": "e38_geometry",
+  "script": "experiments/t38_jgeometry.py",
+  "args": [
+   "--device",
+   "cpu",
+   "--out",
+   "results/e38_jgeometry.json"
+  ],
+  "outputs": [
+   "results/e38_jgeometry.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x3, .pt NOT recorded in provenance (pre-provenance script)",
+  "argv_match": "NO_RECORD",
+  "argv_detail": "results file has no provenance.argv",
+  "script_identity": "NO_RECORD",
+  "script_detail": "no provenance.script",
+  "pt_recorded": 0,
+  "pt_declared": 0,
+  "n_invocations": 1
+ },
+ {
+  "module": "e37_rank_70m",
+  "script": "experiments/t37_rank_ablation.py",
+  "args": [
+   "--model",
+   "70m",
+   "--device",
+   "cpu",
+   "--lens",
+   "lens_70m_n200_db128_pen.pt",
+   "--out",
+   "results/e37_rank_ablation_70m_wikitext.json"
+  ],
+  "outputs": [
+   "results/e37_rank_ablation_70m_wikitext.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, 1 .pt recorded",
+  "argv_match": "NO_RECORD",
+  "argv_detail": "results file has no provenance.argv",
+  "script_identity": "NO_RECORD",
+  "script_detail": "no provenance.script",
+  "pt_recorded": 0,
+  "pt_declared": 1,
+  "n_invocations": 1
+ },
+ {
+  "module": "e37_rank_160m",
+  "script": "experiments/t37_rank_ablation.py",
+  "args": [
+   "--model",
+   "160m",
+   "--device",
+   "cpu",
+   "--lens",
+   "lens_160m_n200_db128_pen.pt",
+   "--out",
+   "results/e37_rank_ablation_160m_wikitext.json"
+  ],
+  "outputs": [
+   "results/e37_rank_ablation_160m_wikitext.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, 1 .pt recorded",
+  "argv_match": "NO_RECORD",
+  "argv_detail": "results file has no provenance.argv",
+  "script_identity": "NO_RECORD",
+  "script_detail": "no provenance.script",
+  "pt_recorded": 0,
+  "pt_declared": 1,
+  "n_invocations": 1
+ },
+ {
+  "module": "e49_stability",
+  "script": "experiments/t43_derangement_stability.py",
+  "args": [
+   "--seeds",
+   "20",
+   "--device",
+   "cpu",
+   "--out",
+   "results/e49_derangement_stability.json"
+  ],
+  "outputs": [
+   "results/e49_derangement_stability.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, .pt NOT recorded in provenance (pre-provenance script)",
+  "argv_match": "NO_RECORD",
+  "argv_detail": "results file has no provenance.argv",
+  "script_identity": "NO_RECORD",
+  "script_detail": "no provenance.script",
+  "pt_recorded": 0,
+  "pt_declared": 0,
+  "n_invocations": 1
+ },
+ {
+  "module": "e33_logit_v2",
+  "script": "experiments/t33_logit_baseline.py",
+  "args": [
+   "--model",
+   "410m",
+   "--band",
+   "9,21",
+   "--device",
+   "cpu",
+   "--derangement",
+   "random",
+   "--derangement-seed",
+   "0",
+   "--ref-lens",
+   "e28_Github_410m_n400_s0.pt",
+   "--out",
+   "results/e33_logit_baseline_410m_v2.json"
+  ],
+  "outputs": [
+   "results/e33_logit_baseline_410m_v2.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, 1 .pt recorded",
+  "argv_match": "NO_RECORD",
+  "argv_detail": "results file has no provenance.argv",
+  "script_identity": "NO_RECORD",
+  "script_detail": "no provenance.script",
+  "pt_recorded": 0,
+  "pt_declared": 1,
+  "n_invocations": 1
+ },
+ {
+  "module": "cv3_margins",
+  "script": "experiments/cv3_margins.py",
+  "args": [],
+  "outputs": [
+   "results/cv3_margins_410m.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, 18 .pt recorded",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "SAME_CODE",
+  "script_detail": "",
+  "pt_recorded": 18,
+  "pt_declared": 6,
+  "n_invocations": 1
+ },
+ {
+  "module": "cv4_capability",
+  "script": "experiments/cv4_phase1_capability.py",
+  "args": [
+   "--models",
+   "70m,160m,410m,1b,1.4b,2.8b"
+  ],
+  "outputs": [
+   "results/cv4_phase1_capability.json"
+  ],
+  "type": "TYPE_2_MODEL",
+  "type_why": "AutoModelForCausalLM x2, no operator load",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "SAME_CODE",
+  "script_detail": "",
+  "pt_recorded": 0,
+  "pt_declared": 0,
+  "n_invocations": 1
+ },
+ {
+  "module": "cv7_rung",
+  "script": "experiments/cv7_1b_rung.py",
+  "args": [
+   "--adjudicate"
+  ],
+  "outputs": [
+   "results/cv7_1b_rung.json"
+  ],
+  "type": "TYPE_3_REAGG",
+  "type_why": "--adjudicate branch returns before any model/operator work",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "SAME_CODE",
+  "script_detail": "",
+  "pt_recorded": 0,
+  "pt_declared": 0,
+  "n_invocations": 1
+ },
+ {
+  "module": "d3_by_family",
+  "script": "experiments/d3_corpus_by_family.py",
+  "args": [],
+  "outputs": [
+   "results/d3_corpus_by_family_410m.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, 15 .pt recorded",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "SAME_CODE",
+  "script_detail": "",
+  "pt_recorded": 15,
+  "pt_declared": 5,
+  "n_invocations": 1
+ },
+ {
+  "module": "cv6_ladder",
+  "script": "experiments/cv6_per_family_ladder.py",
+  "args": [
+   "--adjudicate"
+  ],
+  "outputs": [
+   "results/cv6_per_family_ladder.json"
+  ],
+  "type": "TYPE_3_REAGG",
+  "type_why": "--adjudicate branch returns before any model/operator work",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "SAME_CODE",
+  "script_detail": "",
+  "pt_recorded": 0,
+  "pt_declared": 0,
+  "n_invocations": 1
+ },
+ {
+  "module": "e65_ckpt_geometry",
+  "script": "experiments/t65_ckpt_geometry.py",
+  "args": [
+   "--model",
+   "410m"
+  ],
+  "outputs": [
+   "results/e65_ckpt_geometry_410m.json"
+  ],
+  "type": "TYPE_2_MODEL",
+  "type_why": "AutoModelForCausalLM x2, no operator load",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "CODE_CHANGED",
+  "script_detail": "original at repro/scripts_at_run/8388d47ba755__t65_ckpt_geometry.py",
+  "pt_recorded": 0,
+  "pt_declared": 0,
+  "n_invocations": 1
+ },
+ {
+  "module": "cv1_competence",
+  "script": "experiments/cv1_answer_competence.py",
+  "args": [
+   "--models",
+   "70m,160m,410m,1b"
+  ],
+  "outputs": [
+   "results/cv1_answer_competence.json"
+  ],
+  "type": "TYPE_2_MODEL",
+  "type_why": "AutoModelForCausalLM x2, no operator load",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "SAME_CODE",
+  "script_detail": "",
+  "pt_recorded": 0,
+  "pt_declared": 0,
+  "n_invocations": 1
+ },
+ {
+  "module": "e48b_exposure",
+  "script": "experiments/t48b_exposure_growth.py",
+  "args": [
+   "--exclude",
+   "OOD_News_2024_dedup"
+  ],
+  "outputs": [
+   "results/e48b_exposure_growth.json"
+  ],
+  "type": "TYPE_2_CORPUS",
+  "type_why": "tokenizer-only from_pretrained x1, no model forward, no operator",
+  "argv_match": "DIFFERS",
+  "argv_detail": "recorded=pythia/t48b_exposure_growth.py  |  module offers: experiments/t48b_exposure_growth.py --exclude OOD_News_2024_dedup",
+  "script_identity": "SAME_CODE",
+  "script_detail": "",
+  "pt_recorded": 0,
+  "pt_declared": 0,
+  "n_invocations": 1
+ },
+ {
+  "module": "e48_crossover",
+  "script": "experiments/t48_crossover.py",
+  "args": [
+   "--device",
+   "cpu",
+   "--n-derangements",
+   "5",
+   "--n-boot",
+   "10000"
+  ],
+  "outputs": [
+   "results/e48_crossover_410m.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, 24 .pt recorded",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "CODE_CHANGED",
+  "script_detail": "original at repro/scripts_at_run/a76a103f93a2__t48_crossover.py",
+  "pt_recorded": 24,
+  "pt_declared": 1,
+  "n_invocations": 2
+ },
+ {
+  "module": "e48_gate",
+  "script": "experiments/t48_competence_gate.py",
+  "args": [
+   "--model",
+   "410m",
+   "--device",
+   "cpu"
+  ],
+  "outputs": [
+   "results/e48_competence_gate_410m.json"
+  ],
+  "type": "TYPE_2_MODEL",
+  "type_why": "AutoModelForCausalLM x2, no operator load",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "SAME_CODE",
+  "script_detail": "",
+  "pt_recorded": 0,
+  "pt_declared": 0,
+  "n_invocations": 1
+ },
+ {
+  "module": "e52_factorial",
+  "script": "experiments/t52_factorial.py",
+  "args": [
+   "--device",
+   "cpu",
+   "--workers",
+   "6",
+   "--rstrip",
+   "--out",
+   "results/e52_factorial_410m_rstrip.json",
+   "--cells-out",
+   "results/e57_factorial_cells_410m_rstrip.json"
+  ],
+  "outputs": [
+   "results/e52_factorial_410m_rstrip.json",
+   "results/e57_factorial_cells_410m_rstrip.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, 24 .pt recorded",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "CODE_CHANGED",
+  "script_detail": "original at repro/scripts_at_run/6d74ea7f4ef2__t52_factorial.py",
+  "pt_recorded": 24,
+  "pt_declared": 2,
+  "n_invocations": 2
+ },
+ {
+  "module": "e36_qladder",
+  "script": "experiments/t36_qladder.py",
+  "args": [
+   "--device",
+   "cpu",
+   "--workers",
+   "4",
+   "--rstrip"
+  ],
+  "outputs": [
+   "results/e36_qladder_410m_rstrip.json"
+  ],
+  "type": "TYPE_1_OPERATOR",
+  "type_why": "torch.load x1, 5 .pt recorded",
+  "argv_match": "EXACT",
+  "argv_detail": "",
+  "script_identity": "CODE_CHANGED",
+  "script_detail": "original at repro/scripts_at_run/ef457ce679e6__t36_qladder.py",
+  "pt_recorded": 5,
+  "pt_declared": 1,
+  "n_invocations": 2
+ }
+]

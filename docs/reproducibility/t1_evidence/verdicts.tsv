@@ -1,0 +1,27 @@
+cv5_sensitivity	BIT_IDENTICAL	0	70	results/cv5_metric_sensitivity_410m.json
+cv2_position	BIT_IDENTICAL	0	6	results/cv2_position_support.json
+e58_algebra	BIT_IDENTICAL	0	67	results/e58_algebra_audit.json
+e59_read_dose	MOVED_AS_PREDICTED	0	9456	results/e59_read_dose_410m.json
+d1_union	BIT_IDENTICAL	0	57	results/d1_min_union_diagnostic_410m.json
+e38_geometry	MOVED	1	100	results/e38_jgeometry.json
+e37_rank_70m	BIT_IDENTICAL_RC1	1	81	results/e37_rank_ablation_70m_wikitext.json
+e37_rank_160m	BIT_IDENTICAL_RC1	1	290	results/e37_rank_ablation_160m_wikitext.json
+e49_stability	BIT_IDENTICAL_RC1	1	11709	results/e49_derangement_stability.json
+e33_logit_v2	MOVED_RC1	1	96	results/e33_logit_baseline_410m_v2.json
+cv3_margins	BIT_IDENTICAL	0	82	results/cv3_margins_410m.json
+cv4_capability	BIT_IDENTICAL	0	326	results/cv4_phase1_capability.json
+cv7_rung	BIT_IDENTICAL	0	3	results/cv7_1b_rung.json
+d3_by_family	BIT_IDENTICAL	0	61	results/d3_corpus_by_family_410m.json
+cv6_ladder	BIT_IDENTICAL	0	2	results/cv6_per_family_ladder.json
+e65_ckpt_geometry	MOVED_AS_PREDICTED	0	40	results/e65_ckpt_geometry_410m.json
+cv1_competence	BIT_IDENTICAL	0	55	results/cv1_answer_competence.json
+e48b_exposure	BIT_IDENTICAL	0	99	results/e48b_exposure_growth.json
+e48_crossover	DID_NOT_RUN	1	37	results/e48_crossover_410m.json
+e48_gate	BIT_IDENTICAL	0	726	results/e48_competence_gate_410m.json
+e52_factorial	MOVED	0	2120	results/e52_factorial_410m_rstrip.json;results/e57_factorial_cells_410m_rstrip.json
+e36_qladder	MOVED_AS_PREDICTED	0	1823	results/e36_qladder_410m_rstrip.json
+
+# --- FIX-VERIFICATION PASS (not part of the sweep verdict) ---
+e33_logit_v2	BIT_IDENTICAL_RC1	1	101	results/e33_logit_baseline_410m_v2.json
+e33_logit_v2_FIXED	BIT_IDENTICAL	0	-	results/e33_logit_baseline_410m_v2.json
+e48_crossover	MOVED_AS_PREDICTED	0	271	results/e48_crossover_410m.json

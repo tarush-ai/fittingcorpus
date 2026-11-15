@@ -1,0 +1,80 @@
+# R4 — the corrections that are pure recomputation
+
+**PRE-REGISTERED 2026-08-19, before any of the recomputes ran.** Source:
+[`../POSTREVIEW_EXPERIMENTS.md`](../POSTREVIEW_EXPERIMENTS.md) §3 Tier A, item R4.
+
+> **Note on a colliding id.** The slate uses `R4b` twice: once in the R4 table for *the four-arm
+> `t22` table* (finding F-5), and once in Tier B for *re-scoring E36*. This document owns the
+> former, referred to throughout as **R4b-table**; the latter has its own document,
+> [`R4b_e36_rstrip.md`](R4b_e36_rstrip.md).
+
+---
+
+## QUESTION
+
+Eleven separate numbers in documents a reviewer will read are wrong, missing, or reported at a
+coverage the text does not state. None of them needs a measurement — every input is already on
+disk. The question each answers is only *"what is the number, actually?"*
+
+## PRE-REGISTRATION
+
+Quoted from `specs/POSTREVIEW_EXPERIMENTS.md` §3, item R4, preamble:
+
+> Grouped because each is minutes of work, each closes a named finding, and none has a losing branch.
+> Each still gets a results file and a line in `RESULTS_TAXONOMY.md`; none may be reported from
+> memory (§6.2).
+
+**There is therefore no accept/reject branch on this document**, and none may be invented. Each item
+below carries instead the *value it must produce to count as done*, taken from the slate, so that a
+recompute that disagrees with the slate is visible as a disagreement rather than absorbed.
+
+## THE ITEMS, each with the value that closes it
+
+| id | finding | what is produced | the number that closes it |
+|---|---|---|---|
+| **R4a** | F-8 | containment `k=32` row recomputed at **20/20 shards** for every corpus, stored as one table keyed by shard count so the two columns can never be mixed again | post-cutoff Wikipedia **0.26958** (not 0.24); PubMed control **0.79273** (not 0.67); in-stream 0.918-0.934 and OOD 0.0001-0.0013 already 20/20 and unchanged |
+| **R4b-table** | F-5 | one results file holding all four hierarchical intervals (410M/160M x `min`/`persist`, J-minus-logit and J-minus-shuffled) | the pattern must be visible: **the aggregation that beats the free baseline is the one that fails the derangement control, at both scales**. Unfavourable, and published |
+| **R4c** | F-5, second half | all four aggregation arms (`min`, `persist`, `best1L`, `mean`) published from every ladder cell and from `e51`/`e54`/`e55` | the reported interaction share is currently the **argmax of four**; all four appear |
+| **R4d** | F-7 | E36's `shuf` recomputed from **each corpus's own** derangement, plus `C2_shuf_below_everything` surfaced | like-for-like evidence on disk goes the other way decisively: `e33..._v2` Github **0.027926** vs its own `jshuf` **0.018142**; `e54` C2 at **0 of 15** and **0 of 120**. Measured in [`R4b_e36_rstrip.md`](R4b_e36_rstrip.md); recorded here |
+| **R4e** | JUSTIFIABILITY | the control-power enumeration as a results file, each control marked in place, and the power question added to the experiment-spec template | **27 of 97** control fields could not have failed: 8 compare a quantity to itself, 6 are recorders with no gate, 4 are declared in a docstring and never coded, 9 are arithmetic identities. Includes E47's bottom-k control, computed, stored, never gated, and **would have failed 3 of 5** |
+| **R4f** | M-2 | one-line fix in `src/provenance.canonical_payload_sha` (coerce keys to `str` before hashing) plus a regression test; the stamp extended to every results file the post-review work produces | re-keying `e58_algebra_audit`'s payload to int **reproduces the stored hash exactly**, so the defect is understood and the fix is safe. Only **29 of 214** non-sidecar results files carry a `payload_sha256` at all |
+| **R4g** | M-3, M-4, F-11 | E28 sidecar provenance repaired: true corpus backfilled from `corpus_file`, gate recorded or explicitly marked unrecorded, all 166 hashed into `ARTIFACTS.md`, stale line 211 deleted, `./lab health` H3 fixed to compare a hash rather than a basename string | **166 of 166** sidecars record `"corpus": "wikitext"` (the `--corpus` default leaking) and `anchor_agreement_gate: null`; **0 of 166** operators are named in `ARTIFACTS.md` |
+| **R4h** | M-7, M-16, M-20..M-25 | the small numeric corrections, each verified before it is written | effective-rank minimum **725.888** at `step143000` (so "never falls below 726" is false); "random better on one pair" is **2 of 5**, both Github pairs; `\|rho\| <= 0.28` is **0.2818**; "two sets exactly zero" are **-1.29e-5** and **-2.89e-6**; "~25%" should be **~17%** and the measurement was **0.1704**, in **two** live places — `CONTEXT.md:226` **and** `specs/RESULTS_TAXONOMY.md:66`; E52's `D` is a **redundant estimand plus a misleading gloss**, not a prereg break — `PREREG_E52_FACTORIAL.md:69` defines it verbatim as implemented and the C4 permutation p is computed on `D` itself so the 8/7 factor cancels. **Fix the gloss, not the number** |
+| **R4i** | new, 2026-08-19 | the 1B claim re-derived from the corrected band, or the deviation stated | `e53_ladder_summary.bands_declared_vs_used` records for 1B `declared_by_the_papers_own_rule [6,13]`, `used_in_the_ladder [5,13]`, **`matches: False`**. The corrected-band recompute already exists as E62 (`results/ladder1b_b613/`, `e62_interaction_b613.json`) |
+| **R4j** | new | the leave-two-out reversal published with its magnitude | `e54.matrix_loo.min.drop_both_extremes_github_and_uspto` = fit **42.011** / read **47.613** / residual 10.375, `fit_dominates_read: false` — **the read axis beats the fit axis by 5.6 points**. Also: the abstract's "28/28 leave-two-out splits" carries no aggregation qualifier and is `persist`-only |
+| **R4k** | new | the item count relabelled | `t52_factorial.py` builds `items` from `EVAL_SETS`, not `ADMITTED`, so **541** is 551 released minus 10 unscorable association items. The admitted five hold **449** released items and **801** of the 893 pairs |
+| **R4l** | C-1 | the "pre-registered" qualifier on `tab:predictors` either dropped, qualified, or the registration located | 6 of 45 registration claims are `UNVERIFIABLE` and **three are rows of `tab:predictors`** (E45, E47, E50 family). The conclusion is unchanged either way, because none of the twenty passes |
+
+## CONTROLS
+
+Each item's control is the recomputation itself against the value tabulated above: **a recompute
+that does not reproduce the slate's stated value is a disagreement to report, not a number to
+adopt.** Two items carry a genuine self-test beyond that:
+
+* **R4f** — *required:* re-keying `e58_algebra_audit`'s payload to integer keys reproduces the
+  **stored** hash exactly, **and** the fixed function is stable under a key-type round-trip. The
+  regression test must fail against the unfixed function.
+* **R4g** — *required:* `./lab health` H3 must **fail** when a sidecar's operator hash does not
+  match, and pass when it does. A basename comparison cannot fail that way, which is the defect.
+
+**Power, stated per R4e's own standard.** The R4 items are corrections, so most of their "controls"
+are recomputations rather than gates, and that is declared here rather than discovered later. The
+two above can fail; the rest cannot, by construction.
+
+## DECLARED BIAS
+
+R4a, R4c, R4d and R4j all read from files scored at the **unstripped** readout. Where R1 supersedes
+the underlying measurement, the corrected value replaces it and both are stored; where it does not
+(R4f, R4g, R4i, R4k, R4l are readout-independent), the correction stands on its own.
+
+## COST
+
+$0, CPU, one working day in total.
+
+## RESULT
+
+*(unrun at time of writing)*
+
+## VERDICT
+
+*(pending)*

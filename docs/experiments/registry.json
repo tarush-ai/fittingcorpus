@@ -1,0 +1,726 @@
+{
+ "_about": "The experiment registry: one canonical ID per experimental lineage. Curated here; everything else (dates, results, documents, scripts, modules, run numbers) is derived from the record by tools/build_registry.py, which renders docs/experiments/REGISTRY.md and gates it with --check. Edit this file, then run the tool.",
+ "rules": [
+  "A lineage is one question together with every run, re-score, port, control and adjudication of it. Membership is decided from provenance: which stored results a run consumes and pins, and which document owns them.",
+  "A lineage keeps the number it already had: its E-number if it had one, otherwise the number of its exploratory T-ID (T14 is E14) when that slot is free.",
+  "A lineage with no usable number takes the next number from E67 upward, in order of its first stored result (the earlier of the git commit that first added a results file and the file's provenance timestamp). T13 is the one exploratory ID whose slot was taken (E13 already existed), so it is E67.",
+  "Runs are numbered E##.1, E##.2, ... in the order the provenance record implies: a run whose stored inputs include another run's results comes after it, and otherwise the earlier first stored result comes first. The old IDs survive as aliases, so E52.3 and R1 name the same run.",
+  "A number is never reused and never reassigned. File names are not changed: results files, scripts and pre-registrations are pinned by path and hash in the provenance record, so renaming them would break the record this registry indexes."
+ ],
+ "lineages": [
+  {
+   "id": "E00",
+   "aliases": [
+    "T0"
+   ],
+   "question": "Does the vendored Jacobian-lens fitter run correctly on Pythia (GPT-NeoX) at all?",
+   "finding": "F10"
+  },
+  {
+   "id": "E03",
+   "aliases": [
+    "T3"
+   ],
+   "question": "Does a fitted lens read what it should: self-read, agreement with other lenses, and excess kurtosis over matched nulls?",
+   "finding": "F10"
+  },
+  {
+   "id": "E04",
+   "aliases": [
+    "T4"
+   ],
+   "question": "Which geometry statistics of the fitted map J can be computed from J alone, before any read?",
+   "finding": "F7"
+  },
+  {
+   "id": "E05",
+   "aliases": [
+    "T5A",
+    "T5"
+   ],
+   "question": "Can the lens write: does the source's coordinate-swap intervention work on Pythia-410M, after a capability screen?",
+   "finding": "F11"
+  },
+  {
+   "id": "E07",
+   "aliases": [
+    "T7"
+   ],
+   "question": "Does the Jacobian lens beat the logit lens on the source's six evaluation sets, with a paired item bootstrap?",
+   "finding": "F8"
+  },
+  {
+   "id": "E08",
+   "aliases": [
+    "T8"
+   ],
+   "question": "Does the write intervention work on the source's probe-swap set at Pythia-410M?",
+   "finding": "F11"
+  },
+  {
+   "id": "E09",
+   "aliases": [
+    "T9"
+   ],
+   "question": "How fast does the fitted map converge in N, compared with how fast the task metric converges?",
+   "finding": "F6"
+  },
+  {
+   "id": "E10",
+   "aliases": [
+    "T10"
+   ],
+   "question": "Does the choice of target layer (final versus penultimate) change the readout, at three scales?",
+   "finding": "F10"
+  },
+  {
+   "id": "E11",
+   "aliases": [
+    "T11B",
+    "T11"
+   ],
+   "question": "First corpus test: does refitting on task-adjacent text instead of wikitext change the read at Pythia-70M?",
+   "finding": "F1"
+  },
+  {
+   "id": "E12",
+   "aliases": [
+    "T12"
+   ],
+   "question": "Is there a restricted concept Hessian (a finite-difference interaction residual) at Pythia-410M?",
+   "finding": "F7"
+  },
+  {
+   "id": "E13",
+   "aliases": [
+    "E13"
+   ],
+   "question": "What is the stable rank of the fitted map under a penultimate versus a final target layer?",
+   "finding": "F10"
+  },
+  {
+   "id": "E14",
+   "aliases": [
+    "T14",
+    "T14B"
+   ],
+   "question": "How dispersed are the per-prompt Jacobians around their mean, by relative depth, across six Pythia sizes, and what does layer-0 dispersion co-vary with?",
+   "finding": "F6"
+  },
+  {
+   "id": "E15",
+   "aliases": [
+    "T15",
+    "T15B"
+   ],
+   "question": "First layer-permutation null: per-layer read for the lens, a layer-deranged copy and the logit lens, and the generic versus layer-specific split under three aggregations.",
+   "finding": "F9"
+  },
+  {
+   "id": "E16",
+   "aliases": [
+    "T16",
+    "T16B"
+   ],
+   "question": "Does a robust average (median, trimmed, winsorised) of the Jacobians read differently from the mean at Pythia-1B?",
+   "finding": "F6"
+  },
+  {
+   "id": "E17",
+   "aliases": [
+    "T17"
+   ],
+   "question": "How much do the read headlines move when the band is summarised by each of four layer aggregations, at 160M and 410M?",
+   "finding": "F9"
+  },
+  {
+   "id": "E18",
+   "aliases": [
+    "EN1",
+    "T18"
+   ],
+   "question": "How large is the map's estimation error at N=200, and does it follow the sqrt(dispersion / N) law over an N sweep?",
+   "finding": "F6"
+  },
+  {
+   "id": "E19",
+   "aliases": [
+    "T19"
+   ],
+   "question": "Does skip_first (0, 4 or 16 excluded positions) change the read at 410M?",
+   "finding": "F10"
+  },
+  {
+   "id": "E20",
+   "aliases": [
+    "T20"
+   ],
+   "question": "Ablation KL: what happens to the output distribution when the lens-vector component is zeroed, at three scales and four fitting corpora?",
+   "finding": "F11"
+  },
+  {
+   "id": "E21",
+   "aliases": [
+    "T21"
+   ],
+   "question": "How well conditioned is the swap frame: correlation between concept lens vectors under the logit, Jacobian and shuffled transports?",
+   "finding": "F11"
+  },
+  {
+   "id": "E22",
+   "aliases": [
+    "T22"
+   ],
+   "question": "Bootstrap confidence intervals on the read headlines under min and persist, at 160M and 410M.",
+   "finding": "F9"
+  },
+  {
+   "id": "E27",
+   "aliases": [
+    "T23",
+    "E27"
+   ],
+   "question": "Is the distance between maps fitted on different corpora larger than the distance between maps fitted on resamples of one corpus (the P-ladder)?",
+   "finding": "F2"
+  },
+  {
+   "id": "E28",
+   "aliases": [
+    "E28",
+    "R3",
+    "R8"
+   ],
+   "question": "The read ladder: how does the readout move across fitting corpus and fitting-set size N, and is it flat in N (subthesis S2)?",
+   "paper": "Sec. 4.4 (insensitivity to fitting-set size N)",
+   "finding": "F6"
+  },
+  {
+   "id": "E31",
+   "aliases": [
+    "E31"
+   ],
+   "question": "Predictor bake-off: which corpus or map statistic predicts the per-corpus read level at 410M?",
+   "finding": "F7"
+  },
+  {
+   "id": "E33",
+   "aliases": [
+    "E33",
+    "E33b"
+   ],
+   "question": "How does the identity transport (J = I, the logit lens) score against the five fitting corpora, and are its per-corpus t statistics stored?",
+   "paper": "Sec. 4.1 (the unfitted logit-lens baseline)",
+   "finding": "F1"
+  },
+  {
+   "id": "E34",
+   "aliases": [
+    "E34A",
+    "E34B"
+   ],
+   "question": "Does the activation-space distance D_act between a fitted map and the identity (A) or the evaluation-fitted map (B) predict the per-corpus read floor?",
+   "finding": "F7"
+  },
+  {
+   "id": "E35",
+   "aliases": [
+    "E35",
+    "M1",
+    "E48b"
+   ],
+   "question": "How much of each candidate corpus occurs verbatim in Pythia's training stream (32-gram containment), and how does that grow with stream coverage?",
+   "paper": "Sec. 3 (the containment index) and App. data",
+   "finding": "F4"
+  },
+  {
+   "id": "E36",
+   "aliases": [
+    "E36",
+    "R4b"
+   ],
+   "question": "The Q-ladder: does shifting the read distribution, by prefixing at thirteen rungs, favour the free logit lens over a fitted one (subthesis S3)?",
+   "finding": "F1"
+  },
+  {
+   "id": "E37",
+   "aliases": [
+    "E37"
+   ],
+   "question": "Does ablating the rank of the unembedding change the read, at fixed model, map and battery?",
+   "finding": "F8"
+  },
+  {
+   "id": "E38",
+   "aliases": [
+    "E38"
+   ],
+   "question": "Does the geometry of the fitted map correlate with the measured read gap?",
+   "finding": "F7"
+  },
+  {
+   "id": "E44",
+   "aliases": [
+    "E44"
+   ],
+   "question": "Does D_read, a distance between maps measured in read space, predict the per-corpus read gap?",
+   "finding": "F7"
+  },
+  {
+   "id": "E45",
+   "aliases": [
+    "E45"
+   ],
+   "question": "Resolved per readout direction, does between-corpus disagreement between maps predict per-cell readability?",
+   "finding": "F7"
+  },
+  {
+   "id": "E46",
+   "aliases": [
+    "E46"
+   ],
+   "question": "Does ablating the rank-k subspace on which two corpora's maps disagree move the read (three arms, three pairs)?",
+   "finding": "F7"
+  },
+  {
+   "id": "E47",
+   "aliases": [
+    "E47"
+   ],
+   "question": "The same rank-4 disagreement ablation across five corpus pairs, measured as absolute movement.",
+   "finding": "F7"
+  },
+  {
+   "id": "E48",
+   "aliases": [
+    "E48",
+    "E48-gate",
+    "R2",
+    "E48c",
+    "R0"
+   ],
+   "question": "Does fitting on text the model never saw make the lens worse than not fitting at all, and does measured containment order the read?",
+   "paper": "Sec. 4.2 (containment does not order the read) and App. tables (crossover)",
+   "finding": "F4"
+  },
+  {
+   "id": "E49",
+   "aliases": [
+    "E49"
+   ],
+   "question": "Over 20 independent random layer derangements, how variable is the derangement control's win count?",
+   "paper": "App. controls (variance of a single derangement draw)",
+   "finding": "F9"
+  },
+  {
+   "id": "E50",
+   "aliases": [
+    "E50"
+   ],
+   "question": "Does concept-conditional activation energy in the fitting corpus predict per-token read rank?",
+   "finding": "F7"
+  },
+  {
+   "id": "E51",
+   "aliases": [
+    "E51"
+   ],
+   "question": "How does the variance of the stored read ladders split between fitting corpus, concept set and their interaction?",
+   "finding": "F1"
+  },
+  {
+   "id": "E52",
+   "aliases": [
+    "E52",
+    "P0",
+    "R1"
+   ],
+   "question": "The 8 x 8 factorial: crossing eight fitting corpora with eight read contexts, how much of the readout comes from each, and does fitting and reading on the same corpus help?",
+   "paper": "Sec. 4.1 and Fig. 1 (the 8 x 8 factorial)",
+   "finding": "F1"
+  },
+  {
+   "id": "E53",
+   "aliases": [
+    "E53"
+   ],
+   "question": "What does the ladder look like as a whole: grid shape, the bands declared versus used, and the corpus ordering across scale?",
+   "finding": "F5"
+  },
+  {
+   "id": "E54",
+   "aliases": [
+    "E54"
+   ],
+   "question": "Do the stored headline quantities survive re-scoring under min and under persist, including the derangement comparison?",
+   "finding": "F9"
+  },
+  {
+   "id": "E55",
+   "aliases": [
+    "E55",
+    "R5"
+   ],
+   "question": "Leaving k corpora out, how stable is the fit-versus-read variance split, and does it hold on an independent 5 x 5 grid?",
+   "paper": "Sec. 4.1 (the independent 5 x 5 grid) and App. ablation inventory",
+   "finding": "F1"
+  },
+  {
+   "id": "E56",
+   "aliases": [
+    "E56"
+   ],
+   "question": "Which candidate predictors exist across the results files, and which meet the leave-one-corpus-out rule?",
+   "paper": "Sec. 4.4 and App. tables (the twenty candidate predictors)",
+   "finding": "F7"
+  },
+  {
+   "id": "E57",
+   "aliases": [
+    "E57"
+   ],
+   "question": "What is the bootstrap interval on the 8 x 8 grid's variance decomposition?",
+   "paper": "Sec. 4.1 (variance decomposition and its interval)",
+   "finding": "F1"
+  },
+  {
+   "id": "E58",
+   "aliases": [
+    "E58"
+   ],
+   "question": "Do the algebra and measurement steps behind E45, E36 and the containment chain check out?",
+   "finding": "F10"
+  },
+  {
+   "id": "E59",
+   "aliases": [
+    "E59",
+    "R10"
+   ],
+   "question": "Does the fit-versus-read decomposition move with the length of the read-context prefix, and was the stored dose ladder scored under the corrected readout?",
+   "paper": "App. ablation inventory (the read-context dose sweep, not counted)",
+   "finding": "F1"
+  },
+  {
+   "id": "E60",
+   "aliases": [
+    "E60"
+   ],
+   "question": "Is the fitter deterministic across implementations and thread counts?",
+   "finding": "F10"
+  },
+  {
+   "id": "E61",
+   "aliases": [
+    "E61"
+   ],
+   "question": "Randomised-network null: does a map fitted on a weight-randomised Pythia still read above the logit lens?",
+   "paper": "App. controls (the randomised-network null)",
+   "finding": "F8"
+  },
+  {
+   "id": "E62",
+   "aliases": [
+    "E62"
+   ],
+   "question": "Refitting the 1B ladder on band [6,13], does the interaction decomposition change?",
+   "paper": "App. config (the inherited band)",
+   "finding": "F5"
+  },
+  {
+   "id": "E64",
+   "aliases": [
+    "E64"
+   ],
+   "question": "What does a transport lens cost to acquire, compared with a sparse dictionary?",
+   "finding": "F10"
+  },
+  {
+   "id": "E65",
+   "aliases": [
+    "E65",
+    "E65-P0",
+    "E65-P1",
+    "E65T",
+    "E65R"
+   ],
+   "question": "Across Pythia training checkpoints, where is the floor below which readout geometry and the transport-lens read degenerate?",
+   "finding": "F8"
+  },
+  {
+   "id": "E66",
+   "aliases": [
+    "E66",
+    "E66c",
+    "E66b",
+    "E66d"
+   ],
+   "question": "Does the fitter give the same map on CUDA, how large is its determinism floor, and is the stored precision quantisation-limited?",
+   "paper": "App. reproduction (reproduction note)",
+   "finding": "F10"
+  },
+  {
+   "id": "E67",
+   "aliases": [
+    "T13",
+    "T13B"
+   ],
+   "question": "How do five transports, the shuffled map among them, score against the logit lens on six evaluation sets at three scales, with a paired bootstrap on the decomposition?",
+   "finding": "F9"
+  },
+  {
+   "id": "E68",
+   "aliases": [
+    "EDATA1"
+   ],
+   "question": "Do the evaluation item counts reported in the source paper match the released data?",
+   "paper": "App. config, Table deviations (evaluation item counts)",
+   "finding": "F10"
+  },
+  {
+   "id": "E69",
+   "aliases": [
+    "D1"
+   ],
+   "question": "Is min's preference for a layer-deranged map an artifact of taking a union over band layers?",
+   "paper": "App. controls (the width sweep)",
+   "finding": "F9"
+  },
+  {
+   "id": "E70",
+   "aliases": [
+    "R4",
+    "R4c",
+    "R4e",
+    "R4g",
+    "POSTREVIEW"
+   ],
+   "question": "After external review, do twelve numbers already on disk recompute, do the controls have power, and was every slate item completed?",
+   "finding": "F10"
+  },
+  {
+   "id": "E71",
+   "aliases": [
+    "D2"
+   ],
+   "question": "Do reads scored on CUDA agree with the same reads scored on CPU?",
+   "finding": "F10"
+  },
+  {
+   "id": "E72",
+   "aliases": [
+    "R6"
+   ],
+   "question": "Holding the source fixed and resampling disjoint document blocks, is corpus identity a real factor (between-source share at least 0.70)?",
+   "paper": "Sec. 4.1 (within-source resampling)",
+   "finding": "F2"
+  },
+  {
+   "id": "E73",
+   "aliases": [
+    "R9",
+    "PAPER_CLUSTERED_T"
+   ],
+   "question": "Scored against its own layer-derangement null, does the source's min statistic certify layer correspondence?",
+   "paper": "App. controls (layer-permutation nulls)",
+   "finding": "F9"
+  },
+  {
+   "id": "E74",
+   "aliases": [
+    "R7"
+   ],
+   "question": "With fitting pools matched on type-token ratio, does the corpus effect survive (is it lexical composition)?",
+   "paper": "Sec. 4.1 and App. controls (type-token-ratio matching)",
+   "finding": "F3"
+  },
+  {
+   "id": "E75",
+   "aliases": [
+    "CV6-C0",
+    "CV6",
+    "CV7",
+    "D3"
+   ],
+   "question": "Does the per-family corpus effect replicate at 1B, 1.4B and 2.8B against criteria fixed before those models were scored?",
+   "paper": "Sec. 4.3 (replication at 1B and 2.8B) and App. tables",
+   "finding": "F5"
+  },
+  {
+   "id": "E76",
+   "aliases": [
+    "CV5"
+   ],
+   "question": "Is the rank metric blind at the perturbation size E66 measured, compared with a score metric?",
+   "finding": "F8"
+  },
+  {
+   "id": "E77",
+   "aliases": [
+    "CV2",
+    "CV8",
+    "CV8_C6"
+   ],
+   "question": "Where in the sequence is each item read relative to the positions the map was averaged over, and does that positional extrapolation order the corpora?",
+   "paper": "Sec. 5 and App. controls (read position and the extrapolation test)",
+   "finding": "F8"
+  },
+  {
+   "id": "E78",
+   "aliases": [
+    "CV3"
+   ],
+   "question": "Is the corpus effect a difference in the model's own scores or an artifact of ranking in a crowded vocabulary?",
+   "paper": "App. controls (the choice of z)",
+   "finding": "F8"
+  },
+  {
+   "id": "E79",
+   "aliases": [
+    "CV4P1",
+    "CV4",
+    "CV1"
+   ],
+   "question": "How competent is each Pythia size on the battery (top-1 and top-10 answer rates, prompt surprisal)?",
+   "paper": "Sec. 5 and App. tables (answer competence)",
+   "finding": "F8"
+  },
+  {
+   "id": "E80",
+   "aliases": [
+    "OS1b",
+    "OS1c",
+    "OS1"
+   ],
+   "question": "Before any read is scored, are maps from different corpora further apart than maps from disjoint blocks of one corpus?",
+   "paper": "Sec. 4.1 and App. controls (map-space control)",
+   "finding": "F2"
+  },
+  {
+   "id": "E81",
+   "aliases": [
+    "DN1"
+   ],
+   "question": "Do design-based nulls agree with the permutation null on the derangement comparison?",
+   "finding": "F9"
+  },
+  {
+   "id": "E82",
+   "aliases": [
+    "EFFRANK1"
+   ],
+   "question": "Why do E38 and E65 report different effective ranks (371 against 725.888) for the same unembedding?",
+   "finding": "F7"
+  },
+  {
+   "id": "E83",
+   "aliases": [
+    "CTRLBF1"
+   ],
+   "question": "Record three controls that had been run (E35 M1-C3 and M1-C4, and E52's P0 C2) but never stored.",
+   "finding": "F10"
+  },
+  {
+   "id": "E84",
+   "aliases": [
+    "DA1b",
+    "DA1"
+   ],
+   "question": "Does a second null family, the twelve cyclic shifts of the band, isolate layer correspondence where the random derangement could not?",
+   "paper": "App. controls (the cyclic-shift null)",
+   "finding": "F9"
+  }
+ ],
+ "file_overrides": {
+  "_about": "Results files whose provenance label is not the run that owns them. A label records where a file was computed (e62_interaction_b613.json was written by E51's script); the owner is the document that cites it as its own result.",
+  "results/e52_factorial_410m_pooled.json": "P0",
+  "results/e52_factorial_410m_rerun.json": "P0",
+  "results/e52_factorial_410m_rstrip.json": "R1",
+  "results/e52_factorial_410m_rstrip_w1.json": "R1",
+  "results/e52_factorial_410m_rstrip_w2.json": "R1",
+  "results/e52_factorial_410m_rstrip_w8.json": "R1",
+  "results/e48_crossover_410m_rstrip.json": "R2",
+  "results/e36_qladder_410m_rstrip.json": "R4B",
+  "results/e62_interaction_b613.json": "E62",
+  "results/fit_corpus_manifest_wikitext_n200.json": "T0"
+ },
+ "dir_overrides": {
+  "results/ladder410/": "E28",
+  "results/ladder1b/": "E28",
+  "results/ladder410_cpu/": "R3",
+  "results/ladder410_cpu_rescore/": "R3",
+  "results/ladder410_cpu_rstrip/": "R3",
+  "results/r8_c1_unstripped/": "R8",
+  "results/r7_verified_snapshot/": "R7",
+  "results/ladder1b_b613/": "E62",
+  "results/e48/": "E48",
+  "results/e61/": "E61",
+  "results/m1/": "M1",
+  "results/r4c/": "R4C"
+ },
+ "doc_overrides": {
+  "docs/experiments/preregs/superseded/PREREG_PYTHIA_T7.md": "T7",
+  "docs/experiments/preregs/superseded/PREREG_PYTHIA_T7_v2.md": "T7",
+  "docs/experiments/preregs/superseded/PREREG_E36_QLADDER.md": "E36",
+  "docs/experiments/preregs/superseded/PREREG_E38_JGEOMETRY.md": "E38",
+  "docs/experiments/preregs/superseded/PREREG_E48_CROSSOVER.md": "E48",
+  "docs/experiments/preregs/superseded/PREREG_E52_FACTORIAL.md": "E52",
+  "docs/experiments/preregs/as_registered/740ddb1d6aeb__PREREG_E52_FACTORIAL.md": "E52"
+ },
+ "findings": {
+  "F1": {
+   "title": "Fitting-corpus identity changes the readout",
+   "paper": "Sec. 4.1",
+   "lead": "E52"
+  },
+  "F2": {
+   "title": "The source, not sampling, separates the corpora",
+   "paper": "Sec. 4.1",
+   "lead": "E72"
+  },
+  "F3": {
+   "title": "The effect is not lexical composition",
+   "paper": "Sec. 4.1",
+   "lead": "E74"
+  },
+  "F4": {
+   "title": "Training-stream containment does not explain the ordering",
+   "paper": "Sec. 4.2",
+   "lead": "E48"
+  },
+  "F5": {
+   "title": "The effect replicates across model scale",
+   "paper": "Sec. 4.3",
+   "lead": "E75"
+  },
+  "F6": {
+   "title": "More fitting data does not remove the effect",
+   "paper": "Sec. 4.4",
+   "lead": "E28"
+  },
+  "F7": {
+   "title": "No measured statistic predicts the ordering",
+   "paper": "Sec. 4.4",
+   "lead": "E56"
+  },
+  "F8": {
+   "title": "What the readout score can and cannot show",
+   "paper": "Sec. 5 and App.",
+   "lead": "E79"
+  },
+  "F9": {
+   "title": "Layer-permutation nulls do not certify layer correspondence",
+   "paper": "App. controls",
+   "lead": "E73"
+  },
+  "F10": {
+   "title": "The instrument, its configuration and the stored record are verified",
+   "paper": "Sec. 3 and App.",
+   "lead": null
+  },
+  "F11": {
+   "title": "The write side, explored and not carried into the paper",
+   "paper": "not in the paper",
+   "lead": null
+  }
+ }
+}
